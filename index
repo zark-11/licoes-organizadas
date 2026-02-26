@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lições Organizadas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="welcome">
+    <img src="welcome.png" alt="Bem-vindo" width="500">
+    <h1>Bem-vindo, Caique!</h1>
+  </div>
+
+  <!-- Menu de matérias -->
+  <div class="tabs">
+    <button class="tab-button" onclick="showTab('Portugues')">Português</button>
+    <button class="tab-button" onclick="showTab('Geografia')">Geografia</button>
+    <button class="tab-button" onclick="showTab('Matematica')">Matemática</button>
+    <button class="tab-button" onclick="showTab('Ciencias')">Ciências</button>
+    <button class="tab-button" onclick="showTab('Historia')">História</button>
+    <button class="tab-button" onclick="showTab('Ingles')">Inglês</button>
+    <button class="tab-button" onclick="showTab('Robotica')">Robótica</button>
+    <button class="tab-button" onclick="showTab('EdFisica')">Educação Física</button>
+    <button class="tab-button" onclick="showTab('Etica')">Ética Cristã</button>
+    <button class="tab-button" onclick="showTab('Artes')">Artes</button>
+  </div>
+
+  <!-- Entrada de lição -->
+  <div class="input-section">
+    <input type="text" id="lessonInput" placeholder="Digite sua lição">
+    <button onclick="addLesson()">Adicionar Lição</button>
+  </div>
+
+  <!-- Lista de lições -->
+  <h2 id="currentSubjectTitle">Português</h2>
+  <ul id="lessonList"></ul>
+
+  <!-- Imagem de horários -->
+  <div class="schedule">
+    <h2>Horários</h2>
+    <img src="horarios.png" alt="Horários da escola" width="600">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
